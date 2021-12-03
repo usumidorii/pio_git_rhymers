@@ -1,3 +1,5 @@
+//klawisze alt + ← oraz alt + → pozwalają na szybkie
+//przemieszczanie się pomiędzy otwatymi plikami
 package edu.kis.vh.nursery;
 
 public class defaultCountingOutRhymer {
@@ -11,24 +13,24 @@ public class defaultCountingOutRhymer {
 			NUMBERS[++total] = in;
 	}
 
-		public boolean callCheck() {
+	public boolean callCheck() {
 			return total == -1;
 		}
 		
-			public boolean isFull() {
+	public boolean isFull() {
 				return total == 11;
 			}
 		
-				protected int peekaboo() {
-					if (callCheck())
-						return -1;
-					return NUMBERS[total];
-				}
-			
-					public int countOut() {
-						if (callCheck())
-							return -1;
-						return NUMBERS[total--];
-					}
+	protected int peekaboo() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total];
+	}
+
+	public int countOut() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total--];
+	}
 
 }
