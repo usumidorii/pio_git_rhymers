@@ -10,7 +10,11 @@ public class defaultCountingOutRhymer {
 
 	private final int[] NUMBERS = new int[SIZE];
 
-	public int total = COUNTER;
+	public int getTotal() {
+		return total;
+	}
+
+	private int total = COUNTER;
 
 	public void countIn(int in) {
 		if (!isFull())
@@ -25,7 +29,7 @@ public class defaultCountingOutRhymer {
 				return total == FULL;
 			}
 		
-				protected int peekaboo() {
+				int peekaboo() {
 					if (callCheck())
 						return COUNTER;
 					return NUMBERS[total];
