@@ -21,24 +21,24 @@ public class defaultCountingOutRhymer {
 			NUMBERS[++total] = in;
 	}
 
-		public boolean callCheck() {
-			return total == COUNTER;
-		}
+	public boolean callCheck() {
+		return total == COUNTER;
+	}
 		
-			public boolean isFull() {
-				return total == FULL;
-			}
+	public boolean isFull() {
+		return total == FULL;
+	}
 		
-				int peekaboo() {
-					if (callCheck())
-						return COUNTER;
-					return NUMBERS[total];
-				}
+	int peekaboo() {
+		if (callCheck())
+			return COUNTER;
+		return NUMBERS[total];
+	}
 			
-					public int countOut() {
-						if (callCheck())
-							return COUNTER;
-						return NUMBERS[total--];
-					}
+	public int countOut() {
+		if (callCheck())
+			return COUNTER;
+		return NUMBERS[total--];
+	}
 
 }
