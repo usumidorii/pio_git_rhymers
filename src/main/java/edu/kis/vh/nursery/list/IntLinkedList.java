@@ -35,6 +35,8 @@ class IntLinkedList {
 	 * @return always returns false
 	 */
 
+	//todo method can be deleted
+
 	public boolean isFull() {
 		return false;
 	}
