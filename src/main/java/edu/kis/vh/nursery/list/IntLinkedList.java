@@ -6,6 +6,11 @@ class IntLinkedList {
 	private Node last;
 	private int i;
 
+	/**
+	 * Adds new element to the list
+	 * @param i value of new element
+	 */
+
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -16,19 +21,39 @@ class IntLinkedList {
 		}
 	}
 
+	/**
+	 * checks if the list is empty
+	 * @return 'true' if list is empty
+	 */
+
 	private boolean isEmpty() {
 		return last == null;
 	}
 
+	/**
+	 * checks if the list is full
+	 * @return always returns false
+	 */
+
 	public boolean isFull() {
 		return false;
 	}
+
+	/**
+	 * returns value of the last element
+	 * @return '-1' if list is empty or value of the last element
+	 */
 
 	public int top() {
 		if (isEmpty())
 			return EMPTY;
 		return last.getValue();
 	}
+
+	/**
+	 * takes off the last element form the list
+	 * @return value of the last element
+	 */
 
 	public int pop() {
 		if (isEmpty())
